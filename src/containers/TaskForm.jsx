@@ -1,9 +1,8 @@
-import { useContext } from "react";
-import { AppContext } from "../contexts/AppContext";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { TaskForm as Component } from "../components/TaskForm";
+import { AppContext } from "../contexts/AppContext";
 
-export function TaskForm(props) {
+export function TaskForm() {
   const appContext = useContext(AppContext);
   const [state, setState] = useState({});
 
